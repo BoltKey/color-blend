@@ -1,0 +1,109 @@
+body {
+	text-align: center;
+	font-family: arial;
+	font-size: 20px;
+	width: 700;
+	background-color: white;
+}
+
+.color, .newColor {
+	height: 100;
+	width: 100;
+	float: left;
+	margin: 30px 30px;
+	display: table; 
+	/*overflow: hidden;*/
+}
+
+.color {
+	transition: transform 1s, background-color 1s;
+}
+
+.color .jscolor {
+	transition: background-color 0s;
+}
+
+.newColor {
+	transition: opacity 1s;
+	position: absolute;
+	opacity: 0;
+	background-color: #ffffff;
+}
+
+#plus, #equals {
+	margin: 36 0;
+	font-size: 72;
+	float: left;
+}
+
+#allWrap {
+	position: fixed;
+	left: 100;
+	top: 200;
+	text-align: center;
+	transition: opacity 2s;
+}
+
+#tutorial {
+	position: fixed;
+	left: 260;
+	top: 130;
+	width: 240;
+	transition: opacity 2s;
+}
+.wrap {
+	float: left;
+	max-width: 160;
+	transition: opacity 2s;
+}
+
+#correct {
+	transform: translate3d(0px, -200px, 0px);
+}
+
+#correct, #your {
+	transition: opacity 1s;
+	opacity: 0;
+}
+
+#currScore {
+	margin: 30;
+	transition: opacity 1s;
+}
+
+#winScreen {
+	opacity: 0;
+	position: absolute;
+	width: 500;
+	height: 300;
+	transition: opacity 2s;
+	padding: 100;
+	visibility: hidden;
+}
+
+#restart {
+	transform: translate3d(0px, -140px, 0px);
+	opacity: 0;
+	transition: opacity .4s;
+	visibility: hidden;
+}
+
+/*http://css3buttongenerator.com/*/
+button{
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border: solid #000000 3px;
+  text-decoration: none;
+  transition: background-color .5s;
+}
+
+button:hover {
+  background: #d6d6d6;
+  text-decoration: none;
+}
